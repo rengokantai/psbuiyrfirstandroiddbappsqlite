@@ -50,3 +50,17 @@ String content = intent.getStringExtra("Content");
 EditText editTOdo = (EditText)findViewById(R.id.editTodo);
 eeditTodo.setText(content);
 ```
+
+##4. Modeling Your Data Schema with Classes
+###1 SQLite and Android
+```
+insert() update() delete() query()
+execSQL() rawQuery()
+```
+
+###2. The Contract
+[BaseColumns](https://developer.android.com/reference/android/provider/BaseColumns.html)
+```
+public static final class TodosEntry implements BaseColumns{
+}
+```
