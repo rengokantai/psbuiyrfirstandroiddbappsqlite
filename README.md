@@ -35,3 +35,18 @@ strings.xml
 </string-array>
 </resources>
 ```
+
+####08:04
+```
+final ListView lv = (ListView)findViewById(R.id.lvTools);
+lv.setAdapter(new ArrayAdapter<String>(this,R.layout.todo_list_item,R.id.tvNode.itemname));
+lv.setOnItemClickListener(new AdapterView.OnItemClickListener(){});
+```
+
+TodoActivity.java
+```
+Intent intetn = getIntent();
+String content = intent.getStringExtra("Content");
+EditText editTOdo = (EditText)findViewById(R.id.editTodo);
+eeditTodo.setText(content);
+```
