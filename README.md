@@ -71,3 +71,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper{
 }
 ```
+
+###4 Creating the Database
+in  
+TodoListActivity.java
+```
+protected void onCreate(Bundle savedInstanceState){
+    DatavaseHelper helper = new DatabaseHelper(this);
+    SQLiteDatabase db = helper.getReadableDatabase();
+}
+```
