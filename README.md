@@ -10,3 +10,28 @@ res values colors.xml
 <color name="colorIcons"></color>
 </resources>
 ```
+
+select a new icon name playlist-play, copy vector code
+```
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:fillColor="#000" android:pathData="M19,9H2V11H19V9M19,5H2V7H19V5M2,15H15V13H2V15M17,13V19L22,16L17,13Z" />
+</vector>
+```
+then in res drawable,create a file called playlist_play.xml
+
+
+####06:20
+strings.xml
+```
+<resources>
+<string name="app_name"</string>
+<string-array name="categories_array">
+  <item>Home</item>
+  <item>Work</item>
+</string-array>
+</resources>
+```
