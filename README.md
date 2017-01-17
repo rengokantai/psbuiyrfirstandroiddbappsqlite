@@ -64,3 +64,10 @@ execSQL() rawQuery()
 public static final class TodosEntry implements BaseColumns{
 }
 ```
+
+###3 The SQLiteOpenHelper Class
+```
+import android.database.sqlite.SQLiteOpenHelper;
+public class DatabaseHelper extends SQLiteOpenHelper{
+}
+```
