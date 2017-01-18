@@ -81,3 +81,21 @@ protected void onCreate(Bundle savedInstanceState){
     SQLiteDatabase db = helper.getReadableDatabase();
 }
 ```
+cmd
+```
+sqlite3 app.db
+```
+some commands
+```
+.tables
+PRAGMA TABLE_INFO(categories);
+```
+###5 Inserting Records
+```
+ContentValues values = new ContentValues();
+values.pput(TodoEntry.COLUMN_TEXT,"call");
+long todo_id = db.insert(TodoENtry.TABLE_NAME,null,values);
+```
+
+
+###6 Reading and Writing
