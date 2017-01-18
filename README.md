@@ -99,3 +99,13 @@ long todo_id = db.insert(TodoENtry.TABLE_NAME,null,values);
 
 
 ###6 Reading and Writing
+```
+String[] projection = {"text","created"}
+String selection = "category=?";
+String[] selectionArgs = {"1"};
+Cursor c = db.query("todos","projection,selection,selectionArgs,null,null,null);
+```
+is same as
+```
+select text, created from todos where category=1;
+```
