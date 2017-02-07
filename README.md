@@ -109,3 +109,17 @@ is same as
 ```
 select text, created from todos where category=1;
 ```
+##6. Interacting with Data Asynchronously
+###1 Asynchronous Data Handling in Android
+####03:15
+onCreate
+```
+getLoaderManager().initLoader()
+```
+
+onCreateLoader()  
+return a CursorLoader object  
+
+onLoadFinished(), onLoadReset
+- swapCursor()  
+
