@@ -123,3 +123,19 @@ return a CursorLoader object
 onLoadFinished(), onLoadReset
 - swapCursor()  
 
+###2 Using the CursorAdapter
+```
+Cursor c = getContentResolver().query(TodosEntry.CONTENT_URI);
+```
+then
+```
+final ListView lv = (ListView)findViewById(R.id.lvTodos);
+lv.setAdapter(new ArrayAdapter<String>(this,R.layout.todo_list
+```
+
+TodosCursorAdapter.java
+```
+int textColumn = cursor.getColumnIndex(TodosContract.TodosEntry.COLUMN_TEXT);
+String text = cursor.getString(textColumn);
+```
+
